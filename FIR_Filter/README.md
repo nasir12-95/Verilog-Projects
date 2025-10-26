@@ -10,9 +10,9 @@ The filter processes an 8-bit input stream and produces a 20-bit filtered output
 A **Finite Impulse Response (FIR)** filter is a type of digital filter whose output depends only on the current and a finite number of past input samples.  
 It performs the following operation:
 
-\[
-y[n] = \sum_{k=0}^{N} h[k] \cdot x[n - k]
-\]
+$$
+y[n] = \sum_{k=0}^{N} h[k]\cdot x[n-k]
+$$
 
 where:
 
