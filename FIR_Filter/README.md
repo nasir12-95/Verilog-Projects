@@ -18,7 +18,7 @@ where:
 
 - `h[k]` = filter coefficients  
 - `x[n-k]` = delayed input samples  
-- `N` = filter order (number of taps - 1)
+- `N` = filter order + 1
 
 This implementation uses **22 taps (order = 21)**.
 
