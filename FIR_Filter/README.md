@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a **Finite Impulse Response (FIR) filter** using **Verilog HDL**.  
+This project implements a **Finite Impulse Response (FIR) filter** using **Verilog**.  
 The filter processes an 8-bit input stream and produces a 20-bit filtered output using 22 symmetric coefficients.  
 
 ## FIR Filter Concept
