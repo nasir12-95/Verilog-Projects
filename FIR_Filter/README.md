@@ -11,7 +11,7 @@ A **Finite Impulse Response (FIR)** filter is a type of digital filter whose out
 It performs the following operation:
 
 \[
-y[n] = \sum_{k=0}^{N-1} (h[k] \times x[n-k])
+y[n] = \sum_{k=0}^{N} h[k] \cdot x[n - k]
 \]
 
 where:
