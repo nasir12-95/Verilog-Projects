@@ -55,9 +55,24 @@ The system is split into two major blocks:
 | S3    | 0   | 0   | 1   | 0    | 1    | 0    |
 | S4    | 0   | 0   | 0   | 0    | 0    | 1    |
 
+## File Structure
+
+```text
+├── ADD.v           # Adder module
+├── CNTR.v          # Counter module
+├── EQZ.v           # Equality checker (Zero detector)
+├── PIPO1.v         # Parallel-in Parallel-out Register 1
+├── PIPO2.v         # Parallel-in Parallel-out Register 2
+├── MUL_datapath.v  # Top-level Datapath
+├── Controller.v    # Control unit (FSM)
+├── testbench.v     # Verilog testbench
+└── README.md       # Project documentation
+```
+
 ## Conclusion
 
 This project demonstrates a classic RTL design pattern using:
 
 * Datapath + Controller separation
 * Finite State Machine control
+
