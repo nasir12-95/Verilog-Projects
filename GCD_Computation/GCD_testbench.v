@@ -6,6 +6,8 @@ module GCD_testbench;
   
   reg [15:0] A, B;
   
+  wire gt, lt, eq, ldA, ldB, sel1, sel2, sel_in;
+  
   GCD_datapath DP (gt, lt, eq, ldA, ldB, sel1, sel2, sel_in, data_in, clk);
   Controller CTRL (ldA, ldB, sel1, sel2, sel_in, done, clk, lt, gt, eq, start);
   
@@ -30,3 +32,4 @@ module GCD_testbench;
     end
   
 endmodule
+
