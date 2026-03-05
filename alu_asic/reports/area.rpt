@@ -1,0 +1,37 @@
+13. Printing statistics.
+
+=== alu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      543 wires
+      925 wire bits
+        6 public wires
+       29 public wire bits
+        6 ports
+       29 port bits
+      332 cells
+        8   AND2_X1
+        3   AND3_X1
+        2   AOI211_X1
+       14   AOI21_X1
+        7   AOI221_X1
+        3   AOI222_X1
+        4   AOI22_X1
+       19   INV_X1
+       57   LOGIC0_X1
+       25   LOGIC1_X1
+       20   NAND2_X1
+       12   NAND3_X1
+        9   NOR2_X1
+        9   NOR3_X1
+        3   NOR4_X1
+       11   OAI211_X1
+       15   OAI21_X1
+        7   OAI221_X1
+        1   OAI22_X1
+        6   OR2_X1
+        6   OR3_X1
+       63   XNOR2_X1
+       28   XOR2_X1
+
