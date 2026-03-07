@@ -31,7 +31,7 @@ The project also demonstrates a **complete physical design flow** using **OpenRO
 ## Directory Structure
 
 ```
-uart_tx_project
+uart_asic/
 │
 ├── rtl/
 │   ├── uart_tx.v
