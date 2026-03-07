@@ -1,0 +1,32 @@
+11. Printing statistics.
+
+=== fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      877 wires
+     2313 wire bits
+       26 public wires
+      160 public wire bits
+        8 ports
+       22 port bits
+      455 cells
+        2   AND2_X1
+        1   AND4_X1
+        9   AOI21_X1
+        4   AOI222_X1
+       58   AOI22_X1
+       18   DFFR_X1
+      128   DFF_X1
+       17   INV_X1
+      129   MUX2_X1
+        8   NAND2_X1
+        4   NAND3_X1
+       15   NAND4_X1
+       13   NOR2_X1
+       20   NOR3_X1
+       11   NOR4_X1
+        2   OR2_X1
+       10   XNOR2_X1
+        6   XOR2_X1
+

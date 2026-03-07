@@ -1,0 +1,42 @@
+# =========================================================
+# FIFO Synthesis Script (Nangate 45nm)
+# Tool: Yosys
+# =========================================================
+
+# --------- Setup ---------
+read_liberty -lib ../../lib/NangateOpenCellLibrary_typical.lib
+
+# --------- Read RTL ---------
+read_verilog ../rtl/fifo.v
+
+# --------- Elaborate Design ---------
+hierarchy -top fifo
+proc
+opt
+fsm
+opt
+memory
+opt
+
+# --------- Technology-independent synthesis ---------
+techmap
+opt
+
+# --------- Map flip-flops ---------
+dfflibmap -liberty ../../lib/NangateOpenCellLibrary_typical.lib
+
+# --------- Technology mapping ---------
+abc -liberty ../../lib/NangateOpenCellLibrary_typical.lib
+
+# --------- Final cleanup ---------
+opt
+clean
+
+# --------- Reports ---------
+stat -liberty ../../lib/NangateOpenCellLibrary_typical.lib
+tee -o reports/area.rpt stat
+tee -o reports/cells.rpt stat -liberty ../../lib/NangateOpenCellLibrary_typical.lib
+
+# --------- Write outputs ---------
+write_verilog -noattr -noexpr fifo_syn.v
+write_json fifo_syn.json

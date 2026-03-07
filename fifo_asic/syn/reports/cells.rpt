@@ -1,0 +1,36 @@
+12. Printing statistics.
+
+=== fifo ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      877        - wires
+     2313        - wire bits
+       26        - public wires
+      160        - public wire bits
+        8        - ports
+       22        - port bits
+      455 1.13E+03 cells
+        2    2.128   AND2_X1
+        1    1.596   AND4_X1
+        9    9.576   AOI21_X1
+        4    8.512   AOI222_X1
+       58    77.14   AOI22_X1
+       18    95.76   DFFR_X1
+      128  578.816   DFF_X1
+       17    9.044   INV_X1
+      129  240.198   MUX2_X1
+        8    6.384   NAND2_X1
+        4    4.256   NAND3_X1
+       15    19.95   NAND4_X1
+       13   10.374   NOR2_X1
+       20    21.28   NOR3_X1
+       11    14.63   NOR4_X1
+        2    2.128   OR2_X1
+       10    15.96   XNOR2_X1
+        6    9.576   XOR2_X1
+
+   Chip area for module '\fifo': 1127.308000
+     of which used for sequential elements: 674.576000 (59.84%)
+

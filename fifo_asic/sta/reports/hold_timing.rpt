@@ -1,0 +1,32 @@
+Startpoint: _1546_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _1564_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+    Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------
+           0.00    0.00    0.00   clock clk (rise edge)
+                   0.00    0.00   clock network delay (ideal)
+           0.00    0.00    0.00 ^ _1546_/CK (DFF_X1)
+   7.48    0.01    0.08    0.08 v _1546_/Q (DFF_X1)
+                                  wr_ptr[4] (net)
+           0.01    0.00    0.08 v _1498_/A (XOR2_X1)
+   1.14    0.02    0.02    0.11 ^ _1498_/Z (XOR2_X1)
+                                  _0030_ (net)
+           0.02    0.00    0.11 ^ _1564_/D (DFF_X1)
+                           0.11   data arrival time
+
+           0.00    0.00    0.00   clock clk (rise edge)
+                   0.00    0.00   clock network delay (ideal)
+                   0.20    0.20   clock uncertainty
+                   0.00    0.20   clock reconvergence pessimism
+                           0.20 ^ _1564_/CK (DFF_X1)
+                   0.01    0.21   library hold time
+                           0.21   data required time
+-----------------------------------------------------------------------
+                           0.21   data required time
+                          -0.11   data arrival time
+-----------------------------------------------------------------------
+                          -0.10   slack (VIOLATED)
+
+

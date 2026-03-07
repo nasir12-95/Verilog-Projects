@@ -1,0 +1,43 @@
+Startpoint: wr_en (input port clocked by clk)
+Endpoint: full (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+    Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------
+           0.00    0.00    0.00   clock clk (rise edge)
+                   0.00    0.00   clock network delay (ideal)
+                   1.00    1.00 ^ input external delay
+  20.69    0.05    0.05    1.05 ^ wr_en (in)
+                                  wr_en (net)
+           0.05    0.00    1.05 ^ _1368_/A (INV_X1)
+   2.81    0.01    0.01    1.06 v _1368_/ZN (INV_X1)
+                                  _0506_ (net)
+           0.01    0.00    1.06 v _1369_/A1 (NOR2_X1)
+   5.10    0.03    0.04    1.11 ^ _1369_/ZN (NOR2_X1)
+                                  _0507_ (net)
+           0.03    0.00    1.11 ^ _1523_/A2 (AND2_X1)
+   1.67    0.01    0.04    1.14 ^ _1523_/ZN (AND2_X1)
+                                  _0549_ (net)
+           0.01    0.00    1.14 ^ _1524_/A1 (OAI22_X1)
+   1.34    0.01    0.02    1.16 v _1524_/ZN (OAI22_X1)
+                                  _0550_ (net)
+           0.01    0.00    1.16 v _1533_/A1 (NOR4_X1)
+  28.59    0.30    0.34    1.49 ^ _1533_/ZN (NOR4_X1)
+                                  _0055_ (net)
+           0.30    0.00    1.49 ^ full (out)
+                           1.49   data arrival time
+
+           0.00   10.00   10.00   clock clk (rise edge)
+                   0.00   10.00   clock network delay (ideal)
+                  -0.20    9.80   clock uncertainty
+                   0.00    9.80   clock reconvergence pessimism
+                  -1.00    8.80   output external delay
+                           8.80   data required time
+-----------------------------------------------------------------------
+                           8.80   data required time
+                          -1.49   data arrival time
+-----------------------------------------------------------------------
+                           7.31   slack (MET)
+
+
