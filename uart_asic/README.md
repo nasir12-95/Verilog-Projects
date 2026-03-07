@@ -61,7 +61,6 @@ uart_tx_project
 │   ├── flow.tcl
 │   ├── uart_tx_logfile.log
 │   ├── uart_tx_nan45.tcl
-│   ├── Nangate45/
 │   └── results/
 │
 ├── reports/
